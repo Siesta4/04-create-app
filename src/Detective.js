@@ -1,20 +1,9 @@
-import React from 'react';
+import React, { useState } from "react";
 
-class Detective extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      sherlock: 'психопат'
-    };
-  }
+function Detective() {
+  const [sherlock, setSherlock] = useState("психопат");
 
-  render() {
-    return (
-      <div>
-        <h2>Шерлок - {this.state.sherlock}</h2>
-      </div>
-    );
-  }
+  return <h2>Шерлок - {sherlock}</h2>;
 }
 
 export default Detective;

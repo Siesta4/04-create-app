@@ -1,14 +1,15 @@
-import React from 'react';
-import Base from './Base';
-import Detective from './Detective';
+import React from "react";
+import Base from "./Base";
+import Detective from "./Detective";
 
-function App(){
-    return (
-      <div>
-        <Base />
+function App() {
+  return (
+    <div>
+      <Base>
         <Detective />
-      </div>
-    );
+      </Base>
+    </div>
+  );
 }
 
 export default App;
